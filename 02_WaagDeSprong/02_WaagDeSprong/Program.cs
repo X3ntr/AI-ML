@@ -63,7 +63,14 @@ namespace _02_WaagDeSprong
                     return false;
                 }
             }
-            return false;
+            if (a.Length < b.Length)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
